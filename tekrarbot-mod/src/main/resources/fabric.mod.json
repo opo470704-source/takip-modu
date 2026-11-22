@@ -1,0 +1,21 @@
+{
+	"schemaVersion": 1,
+	"id": "tekrarbot",
+	"version": "${version}",
+	"name": "Tekrar Botu",
+	"description": "Bu bilgisayardaki oyunu, belirledigin oyuncuyu gecikmeli olarak taklit eden ve takip eden bir istemciye cevirir.",
+	"authors": [],
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.tekrarbot.TekrarBotClient"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
