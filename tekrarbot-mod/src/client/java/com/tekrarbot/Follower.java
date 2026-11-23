@@ -91,7 +91,7 @@ public final class Follower {
 		boolean headMoved = haveLast
 			&& (Math.abs(Mth.wrapDegrees(curYaw - lastYaw)) > 0.05f
 				|| Math.abs(curPitch - lastPitch) > 0.05f);
-		boolean keyInput = mc.screen != null || userKeyInput(o);
+		boolean keyInput = userKeyInput(o);
 		if (headMoved || keyInput) {
 			if (idleTicks == 0) releaseOurKeys();
 			idleTicks = IDLE_TICKS;
